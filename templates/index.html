@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример формы на Go</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Введите текст:</h1>
+        <form id="myForm" method="post">
+            <textarea class="input-text" id="text" name="text" rows="4" cols="50"></textarea><br><br>
+            <select class="select-style" id="format" name="format">  
+                <option value="standard.txt">standard</option>
+                <option value="shadow.txt">shadow</option>
+                <option value="thinkertoy.txt">thinkertoy</option>
+            </select>
+            <br><br>
+            <button type="submit">Отправить</button>
+        </form>
+        <pre class="pre-result" id="pre-result"></pre>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
